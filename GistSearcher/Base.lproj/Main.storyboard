@@ -217,10 +217,10 @@
             </objects>
             <point key="canvasLocation" x="748" y="-669"/>
         </scene>
-        <!--View Controller-->
+        <!--Gist List View Controller-->
         <scene sceneID="Ukm-24-waC">
             <objects>
-                <viewController id="Lqd-R2-awt" sceneMemberID="viewController">
+                <viewController id="Lqd-R2-awt" customClass="GSGistListViewController" customModule="GistSearcher" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WyV-Bt-9Yp"/>
                         <viewControllerLayoutGuide type="bottom" id="NUE-Y1-uSg"/>
@@ -238,10 +238,10 @@
             </objects>
             <point key="canvasLocation" x="1962" y="142"/>
         </scene>
-        <!--View Controller-->
+        <!--Gist Detail View Controller-->
         <scene sceneID="FYM-dH-uwq">
             <objects>
-                <viewController id="dyI-7W-xv2" sceneMemberID="viewController">
+                <viewController id="dyI-7W-xv2" customClass="GSGistDetailViewController" customModule="GistSearcher" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Gzt-xQ-owm"/>
                         <viewControllerLayoutGuide type="bottom" id="s1A-lt-LZo"/>
@@ -259,10 +259,10 @@
             </objects>
             <point key="canvasLocation" x="1961" y="-670"/>
         </scene>
-        <!--View Controller-->
+        <!--Gist Comment View Controller-->
         <scene sceneID="FUy-B2-o3z">
             <objects>
-                <viewController id="j12-SX-XoM" sceneMemberID="viewController">
+                <viewController id="j12-SX-XoM" customClass="GSGistCommentViewController" customModule="GistSearcher" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7yL-yg-cMl"/>
                         <viewControllerLayoutGuide type="bottom" id="qbi-UC-ErP"/>
@@ -304,6 +304,6 @@
         <image name="iconSearchList" width="75" height="75"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="jag-yC-neQ"/>
+        <segue reference="Olc-1J-yg0"/>
     </inferredMetricsTieBreakers>
 </document>

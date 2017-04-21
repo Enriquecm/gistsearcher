@@ -13,6 +13,10 @@
 		ADAB893C1EA5990A004E0370 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADAB893B1EA5990A004E0370 /* Assets.xcassets */; };
 		ADAB893F1EA5990A004E0370 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADAB893D1EA5990A004E0370 /* LaunchScreen.storyboard */; };
 		ADAB894A1EA5990A004E0370 /* GistSearcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAB89491EA5990A004E0370 /* GistSearcherTests.swift */; };
+		ADAB89591EAA8C21004E0370 /* GSQRCodeReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAB89581EAA8C21004E0370 /* GSQRCodeReaderViewController.swift */; };
+		ADAB895B1EAA8C2E004E0370 /* GSGistListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAB895A1EAA8C2E004E0370 /* GSGistListViewController.swift */; };
+		ADAB895D1EAA8CA9004E0370 /* GSGistDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAB895C1EAA8CA9004E0370 /* GSGistDetailViewController.swift */; };
+		ADAB895F1EAA8CBD004E0370 /* GSGistCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAB895E1EAA8CBD004E0370 /* GSGistCommentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		ADAB89451EA5990A004E0370 /* GistSearcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GistSearcherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADAB89491EA5990A004E0370 /* GistSearcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistSearcherTests.swift; sourceTree = "<group>"; };
 		ADAB894B1EA5990A004E0370 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADAB89581EAA8C21004E0370 /* GSQRCodeReaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSQRCodeReaderViewController.swift; sourceTree = "<group>"; };
+		ADAB895A1EAA8C2E004E0370 /* GSGistListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSGistListViewController.swift; sourceTree = "<group>"; };
+		ADAB895C1EAA8CA9004E0370 /* GSGistDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSGistDetailViewController.swift; sourceTree = "<group>"; };
+		ADAB895E1EAA8CBD004E0370 /* GSGistCommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSGistCommentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +85,8 @@
 		ADAB89331EA5990A004E0370 /* GistSearcher */ = {
 			isa = PBXGroup;
 			children = (
+				ADAB89541EAA8AAB004E0370 /* Application */,
 				ADAB89341EA5990A004E0370 /* AppDelegate.swift */,
-				ADAB89361EA5990A004E0370 /* GSMainViewController.swift */,
 				ADAB89381EA5990A004E0370 /* Main.storyboard */,
 				ADAB893B1EA5990A004E0370 /* Assets.xcassets */,
 				ADAB893D1EA5990A004E0370 /* LaunchScreen.storyboard */,
@@ -94,6 +102,42 @@
 				ADAB894B1EA5990A004E0370 /* Info.plist */,
 			);
 			path = GistSearcherTests;
+			sourceTree = "<group>";
+		};
+		ADAB89541EAA8AAB004E0370 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				ADAB89561EAA8B5E004E0370 /* Main */,
+				ADAB89551EAA8AB7004E0370 /* QRCodeReader */,
+				ADAB89571EAA8B64004E0370 /* Gist */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		ADAB89551EAA8AB7004E0370 /* QRCodeReader */ = {
+			isa = PBXGroup;
+			children = (
+				ADAB89581EAA8C21004E0370 /* GSQRCodeReaderViewController.swift */,
+			);
+			name = QRCodeReader;
+			sourceTree = "<group>";
+		};
+		ADAB89561EAA8B5E004E0370 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				ADAB89361EA5990A004E0370 /* GSMainViewController.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		ADAB89571EAA8B64004E0370 /* Gist */ = {
+			isa = PBXGroup;
+			children = (
+				ADAB895A1EAA8C2E004E0370 /* GSGistListViewController.swift */,
+				ADAB895C1EAA8CA9004E0370 /* GSGistDetailViewController.swift */,
+				ADAB895E1EAA8CBD004E0370 /* GSGistCommentViewController.swift */,
+			);
+			name = Gist;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,7 +245,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADAB89371EA5990A004E0370 /* GSMainViewController.swift in Sources */,
+				ADAB895F1EAA8CBD004E0370 /* GSGistCommentViewController.swift in Sources */,
+				ADAB895D1EAA8CA9004E0370 /* GSGistDetailViewController.swift in Sources */,
+				ADAB895B1EAA8C2E004E0370 /* GSGistListViewController.swift in Sources */,
 				ADAB89351EA5990A004E0370 /* AppDelegate.swift in Sources */,
+				ADAB89591EAA8C21004E0370 /* GSQRCodeReaderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
