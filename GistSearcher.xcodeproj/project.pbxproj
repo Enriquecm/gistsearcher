@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17465E67273FB4BE3941A0E9 /* Pods_GistSearcherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9A1331644256815745B3885 /* Pods_GistSearcherTests.framework */; };
+		91BA65F3BBE8ADADE561A48A /* Pods_GistSearcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7F3C42D33B94AD9EA91303D /* Pods_GistSearcher.framework */; };
 		ADAB89351EA5990A004E0370 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAB89341EA5990A004E0370 /* AppDelegate.swift */; };
 		ADAB89371EA5990A004E0370 /* GSMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAB89361EA5990A004E0370 /* GSMainViewController.swift */; };
 		ADAB893A1EA5990A004E0370 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADAB89381EA5990A004E0370 /* Main.storyboard */; };
@@ -33,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D37CB19577852B8A5EDFDAA /* Pods-GistSearcherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GistSearcherTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GistSearcherTests/Pods-GistSearcherTests.release.xcconfig"; sourceTree = "<group>"; };
+		7DC5D795CFAE84C2FBFBB252 /* Pods-GistSearcher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GistSearcher.release.xcconfig"; path = "Pods/Target Support Files/Pods-GistSearcher/Pods-GistSearcher.release.xcconfig"; sourceTree = "<group>"; };
+		7E8A6113D551B53A4E674DAC /* Pods-GistSearcher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GistSearcher.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GistSearcher/Pods-GistSearcher.debug.xcconfig"; sourceTree = "<group>"; };
 		ADAB89311EA5990A004E0370 /* GistSearcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GistSearcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADAB89341EA5990A004E0370 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADAB89361EA5990A004E0370 /* GSMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSMainViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +55,9 @@
 		ADAB89611EAA950A004E0370 /* GSPreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSPreviewView.swift; sourceTree = "<group>"; };
 		ADBBC68C1EB153F400256469 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		ADBBC68F1EB1593A00256469 /* GistSearcherConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GistSearcherConfig.swift; sourceTree = "<group>"; };
+		B7F3C42D33B94AD9EA91303D /* Pods_GistSearcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GistSearcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB4D296474DF54C87B982DFD /* Pods-GistSearcherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GistSearcherTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GistSearcherTests/Pods-GistSearcherTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E9A1331644256815745B3885 /* Pods_GistSearcherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GistSearcherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91BA65F3BBE8ADADE561A48A /* Pods_GistSearcher.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,18 +73,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17465E67273FB4BE3941A0E9 /* Pods_GistSearcherTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7436C667326DA4E981E85678 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E8A6113D551B53A4E674DAC /* Pods-GistSearcher.debug.xcconfig */,
+				7DC5D795CFAE84C2FBFBB252 /* Pods-GistSearcher.release.xcconfig */,
+				BB4D296474DF54C87B982DFD /* Pods-GistSearcherTests.debug.xcconfig */,
+				1D37CB19577852B8A5EDFDAA /* Pods-GistSearcherTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		ADAB89281EA5990A004E0370 = {
 			isa = PBXGroup;
 			children = (
 				ADAB89331EA5990A004E0370 /* GistSearcher */,
 				ADAB89481EA5990A004E0370 /* GistSearcherTests */,
 				ADAB89321EA5990A004E0370 /* Products */,
+				7436C667326DA4E981E85678 /* Pods */,
+				FDF77A1B638D11C53D6295AF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -181,6 +204,15 @@
 			name = Utils;
 			sourceTree = "<group>";
 		};
+		FDF77A1B638D11C53D6295AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7F3C42D33B94AD9EA91303D /* Pods_GistSearcher.framework */,
+				E9A1331644256815745B3885 /* Pods_GistSearcherTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -188,9 +220,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ADAB894E1EA5990A004E0370 /* Build configuration list for PBXNativeTarget "GistSearcher" */;
 			buildPhases = (
+				3E2927BF16C860A1770FD878 /* [CP] Check Pods Manifest.lock */,
 				ADAB892D1EA5990A004E0370 /* Sources */,
 				ADAB892E1EA5990A004E0370 /* Frameworks */,
 				ADAB892F1EA5990A004E0370 /* Resources */,
+				25B55DEED97B1E6A478C0681 /* [CP] Embed Pods Frameworks */,
+				F01AC3AC55E4259A5264B834 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -205,9 +240,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ADAB89511EA5990A004E0370 /* Build configuration list for PBXNativeTarget "GistSearcherTests" */;
 			buildPhases = (
+				CAFCB4609060C44A81D5E5AB /* [CP] Check Pods Manifest.lock */,
 				ADAB89411EA5990A004E0370 /* Sources */,
 				ADAB89421EA5990A004E0370 /* Frameworks */,
 				ADAB89431EA5990A004E0370 /* Resources */,
+				63A610903699532296ACDAB7 /* [CP] Embed Pods Frameworks */,
+				FCD484321CA4357AC95805FE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,6 +270,7 @@
 				TargetAttributes = {
 					ADAB89301EA5990A004E0370 = {
 						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 38HUSCHT3G;
 						ProvisioningStyle = Automatic;
 					};
 					ADAB89441EA5990A004E0370 = {
@@ -280,13 +319,108 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		25B55DEED97B1E6A478C0681 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GistSearcher/Pods-GistSearcher-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E2927BF16C860A1770FD878 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		63A610903699532296ACDAB7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GistSearcherTests/Pods-GistSearcherTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CAFCB4609060C44A81D5E5AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F01AC3AC55E4259A5264B834 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GistSearcher/Pods-GistSearcher-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCD484321CA4357AC95805FE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GistSearcherTests/Pods-GistSearcherTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ADAB892D1EA5990A004E0370 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADBBC68D1EB153F400256469 /* StringExtensions.swift in Sources */,
 				ADAB89371EA5990A004E0370 /* GSMainViewController.swift in Sources */,
 				ADAB895F1EAA8CBD004E0370 /* GSGistCommentViewController.swift in Sources */,
+				ADBBC6901EB1593A00256469 /* GistSearcherConfig.swift in Sources */,
 				ADAB895D1EAA8CA9004E0370 /* GSGistDetailViewController.swift in Sources */,
 				ADAB895B1EAA8C2E004E0370 /* GSGistListViewController.swift in Sources */,
 				ADAB89621EAA950A004E0370 /* GSPreviewView.swift in Sources */,
@@ -374,7 +508,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -419,7 +553,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -430,8 +564,10 @@
 		};
 		ADAB894F1EA5990A004E0370 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E8A6113D551B53A4E674DAC /* Pods-GistSearcher.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 38HUSCHT3G;
 				INFOPLIST_FILE = GistSearcher/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.choynowski.GistSearcher;
@@ -442,8 +578,10 @@
 		};
 		ADAB89501EA5990A004E0370 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DC5D795CFAE84C2FBFBB252 /* Pods-GistSearcher.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 38HUSCHT3G;
 				INFOPLIST_FILE = GistSearcher/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.choynowski.GistSearcher;
@@ -454,6 +592,7 @@
 		};
 		ADAB89521EA5990A004E0370 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB4D296474DF54C87B982DFD /* Pods-GistSearcherTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -468,6 +607,7 @@
 		};
 		ADAB89531EA5990A004E0370 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D37CB19577852B8A5EDFDAA /* Pods-GistSearcherTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
