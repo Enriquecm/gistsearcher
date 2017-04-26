@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bxE-EH-89a">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bxE-EH-89a">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -173,10 +172,10 @@
             </objects>
             <point key="canvasLocation" x="748" y="141.67916041979012"/>
         </scene>
-        <!--View Controller-->
+        <!--Code Reader View Controller-->
         <scene sceneID="ssp-mq-uiC">
             <objects>
-                <viewController id="Or9-zi-0m0" sceneMemberID="viewController">
+                <viewController id="Or9-zi-0m0" customClass="GSQRCodeReaderViewController" customModule="GistSearcher" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kdr-Yg-SL8"/>
                         <viewControllerLayoutGuide type="bottom" id="tde-zY-va6"/>
@@ -185,19 +184,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mv6-Pn-qxH">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mv6-Pn-qxH" customClass="GSPreviewView" customModule="GistSearcher" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ydu-af-qWc">
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ydu-af-qWc">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                     </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E5v-7m-pad">
+                                        <rect key="frame" x="0.0" y="563" width="375" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="586-Lr-S9a">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.196766651459854" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="586-Lr-S9a" firstAttribute="top" secondItem="E5v-7m-pad" secondAttribute="top" id="069-ho-blW"/>
+                                            <constraint firstAttribute="trailing" secondItem="586-Lr-S9a" secondAttribute="trailing" id="O79-Ci-r8F"/>
+                                            <constraint firstAttribute="height" constant="40" id="PhD-GI-zhS"/>
+                                            <constraint firstAttribute="bottom" secondItem="586-Lr-S9a" secondAttribute="bottom" id="jSF-Ta-iLW"/>
+                                            <constraint firstItem="586-Lr-S9a" firstAttribute="leading" secondItem="E5v-7m-pad" secondAttribute="leading" id="maS-nd-pnK"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="ydu-af-qWc" firstAttribute="top" secondItem="Mv6-Pn-qxH" secondAttribute="top" id="65k-9q-ScA"/>
+                                    <constraint firstAttribute="bottom" secondItem="E5v-7m-pad" secondAttribute="bottom" id="ZOs-wT-Bj7"/>
                                     <constraint firstAttribute="bottom" secondItem="ydu-af-qWc" secondAttribute="bottom" id="bnW-hc-Rt9"/>
+                                    <constraint firstAttribute="trailing" secondItem="E5v-7m-pad" secondAttribute="trailing" id="fji-yQ-nc8"/>
                                     <constraint firstAttribute="trailing" secondItem="ydu-af-qWc" secondAttribute="trailing" id="qo7-RJ-1Cc"/>
                                     <constraint firstItem="ydu-af-qWc" firstAttribute="leading" secondItem="Mv6-Pn-qxH" secondAttribute="leading" id="rxf-LP-zPw"/>
+                                    <constraint firstItem="E5v-7m-pad" firstAttribute="leading" secondItem="Mv6-Pn-qxH" secondAttribute="leading" id="uWw-ok-VSK"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -210,12 +231,15 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="dyI-7W-xv2" kind="show" id="jag-yC-neQ"/>
+                        <outlet property="labelQRInfo" destination="586-Lr-S9a" id="DzZ-14-d7z"/>
+                        <outlet property="viewCameraPreview" destination="Mv6-Pn-qxH" id="90C-Su-V9W"/>
+                        <outlet property="viewQRInfo" destination="E5v-7m-pad" id="kXi-29-21u"/>
+                        <segue destination="dyI-7W-xv2" kind="show" identifier="segueGoToGist" id="jag-yC-neQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G25-9V-6fm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="748" y="-669"/>
+            <point key="canvasLocation" x="748" y="-669.71514242878561"/>
         </scene>
         <!--Gist List View Controller-->
         <scene sceneID="Ukm-24-waC">
@@ -249,7 +273,19 @@
                     <view key="view" contentMode="scaleToFill" id="u5o-bR-daf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XdN-VB-qBV">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="s1A-lt-LZo" firstAttribute="top" secondItem="XdN-VB-qBV" secondAttribute="bottom" id="Hsz-KK-uT2"/>
+                            <constraint firstItem="XdN-VB-qBV" firstAttribute="leading" secondItem="u5o-bR-daf" secondAttribute="leading" id="c40-HO-cqD"/>
+                            <constraint firstItem="XdN-VB-qBV" firstAttribute="top" secondItem="Gzt-xQ-owm" secondAttribute="bottom" id="gFZ-qC-ylp"/>
+                            <constraint firstAttribute="trailing" secondItem="XdN-VB-qBV" secondAttribute="trailing" id="qLv-rQ-DcE"/>
+                        </constraints>
                     </view>
                     <connections>
                         <segue destination="j12-SX-XoM" kind="show" id="Mpw-hV-gkC"/>
@@ -304,6 +340,6 @@
         <image name="iconSearchList" width="75" height="75"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Olc-1J-yg0"/>
+        <segue reference="jag-yC-neQ"/>
     </inferredMetricsTieBreakers>
 </document>

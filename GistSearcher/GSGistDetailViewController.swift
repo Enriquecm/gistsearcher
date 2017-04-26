@@ -10,6 +10,8 @@ import UIKit
 
 class GSGistDetailViewController: UIViewController {
 
+    var gistURL: URL?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

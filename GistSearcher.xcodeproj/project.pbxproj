@@ -17,6 +17,9 @@
 		ADAB895B1EAA8C2E004E0370 /* GSGistListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAB895A1EAA8C2E004E0370 /* GSGistListViewController.swift */; };
 		ADAB895D1EAA8CA9004E0370 /* GSGistDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAB895C1EAA8CA9004E0370 /* GSGistDetailViewController.swift */; };
 		ADAB895F1EAA8CBD004E0370 /* GSGistCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAB895E1EAA8CBD004E0370 /* GSGistCommentViewController.swift */; };
+		ADAB89621EAA950A004E0370 /* GSPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAB89611EAA950A004E0370 /* GSPreviewView.swift */; };
+		ADBBC68D1EB153F400256469 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC68C1EB153F400256469 /* StringExtensions.swift */; };
+		ADBBC6901EB1593A00256469 /* GistSearcherConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC68F1EB1593A00256469 /* GistSearcherConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		ADAB895A1EAA8C2E004E0370 /* GSGistListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSGistListViewController.swift; sourceTree = "<group>"; };
 		ADAB895C1EAA8CA9004E0370 /* GSGistDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSGistDetailViewController.swift; sourceTree = "<group>"; };
 		ADAB895E1EAA8CBD004E0370 /* GSGistCommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSGistCommentViewController.swift; sourceTree = "<group>"; };
+		ADAB89611EAA950A004E0370 /* GSPreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSPreviewView.swift; sourceTree = "<group>"; };
+		ADBBC68C1EB153F400256469 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		ADBBC68F1EB1593A00256469 /* GistSearcherConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GistSearcherConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +91,10 @@
 		ADAB89331EA5990A004E0370 /* GistSearcher */ = {
 			isa = PBXGroup;
 			children = (
+				ADBBC68E1EB1590E00256469 /* Utils */,
 				ADAB89541EAA8AAB004E0370 /* Application */,
+				ADAB89601EAA94FA004E0370 /* View */,
+				ADBBC68B1EB153E700256469 /* Extensions */,
 				ADAB89341EA5990A004E0370 /* AppDelegate.swift */,
 				ADAB89381EA5990A004E0370 /* Main.storyboard */,
 				ADAB893B1EA5990A004E0370 /* Assets.xcassets */,
@@ -138,6 +147,38 @@
 				ADAB895E1EAA8CBD004E0370 /* GSGistCommentViewController.swift */,
 			);
 			name = Gist;
+			sourceTree = "<group>";
+		};
+		ADAB89601EAA94FA004E0370 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ADAB89631EAA950D004E0370 /* Custom */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		ADAB89631EAA950D004E0370 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				ADAB89611EAA950A004E0370 /* GSPreviewView.swift */,
+			);
+			name = Custom;
+			sourceTree = "<group>";
+		};
+		ADBBC68B1EB153E700256469 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ADBBC68C1EB153F400256469 /* StringExtensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		ADBBC68E1EB1590E00256469 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				ADBBC68F1EB1593A00256469 /* GistSearcherConfig.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +289,7 @@
 				ADAB895F1EAA8CBD004E0370 /* GSGistCommentViewController.swift in Sources */,
 				ADAB895D1EAA8CA9004E0370 /* GSGistDetailViewController.swift in Sources */,
 				ADAB895B1EAA8C2E004E0370 /* GSGistListViewController.swift in Sources */,
+				ADAB89621EAA950A004E0370 /* GSPreviewView.swift in Sources */,
 				ADAB89351EA5990A004E0370 /* AppDelegate.swift in Sources */,
 				ADAB89591EAA8C21004E0370 /* GSQRCodeReaderViewController.swift in Sources */,
 			);
