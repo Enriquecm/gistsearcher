@@ -6,9 +6,10 @@ target 'GistSearcher' do
   use_frameworks!
 
   # Pods for GistSearcher
-  pod 'Alamofire', '~> 4.4'
-
-
+  pod 'Alamofire'
+  pod 'AlamofireObjectMapper'
+  pod 'ObjectMapper'
+  
   target 'GistSearcherTests' do
     inherit! :search_paths
     # Pods for testing

@@ -22,6 +22,21 @@
 		ADAB89621EAA950A004E0370 /* GSPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAB89611EAA950A004E0370 /* GSPreviewView.swift */; };
 		ADBBC68D1EB153F400256469 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC68C1EB153F400256469 /* StringExtensions.swift */; };
 		ADBBC6901EB1593A00256469 /* GistSearcherConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC68F1EB1593A00256469 /* GistSearcherConfig.swift */; };
+		ADBBC6951EB16B2C00256469 /* GSAPIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC6941EB16B2C00256469 /* GSAPIProvider.swift */; };
+		ADBBC6971EB16C2000256469 /* GSAPIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC6961EB16C2000256469 /* GSAPIEndpoints.swift */; };
+		ADBBC69A1EB16D3E00256469 /* GSGist.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC6991EB16D3E00256469 /* GSGist.swift */; };
+		ADBBC69E1EB1704500256469 /* GSFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC69D1EB1704500256469 /* GSFile.swift */; };
+		ADBBC6A01EB1770900256469 /* GSComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC69F1EB1770900256469 /* GSComment.swift */; };
+		ADBBC6A21EB1778500256469 /* Transforms.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC6A11EB1778500256469 /* Transforms.swift */; };
+		ADBBC6A51EB177F800256469 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC6A41EB177F800256469 /* DateHelper.swift */; };
+		ADBBC6A71EB1782B00256469 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC6A61EB1782B00256469 /* DateExtensions.swift */; };
+		ADBBC6AB1EB17E7000256469 /* GSAPIRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC6AA1EB17E7000256469 /* GSAPIRequests.swift */; };
+		ADBBC6AD1EB188C000256469 /* GSGistProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC6AC1EB188C000256469 /* GSGistProcessing.swift */; };
+		ADBBC6AF1EB18A5700256469 /* GSGistDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC6AE1EB18A5700256469 /* GSGistDetailViewModel.swift */; };
+		ADBBC6FE1EB190C700256469 /* CodeViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC6F91EB190C700256469 /* CodeViewDelegate.swift */; };
+		ADBBC6FF1EB190C700256469 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADBBC6FA1EB190C700256469 /* Info.plist */; };
+		ADBBC7001EB190C700256469 /* OKSGutteredCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC6FC1EB190C700256469 /* OKSGutteredCodeView.swift */; };
+		ADBBC7011EB190C700256469 /* OKSGutteredCodeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADBBC6FD1EB190C700256469 /* OKSGutteredCodeView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +70,22 @@
 		ADAB89611EAA950A004E0370 /* GSPreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSPreviewView.swift; sourceTree = "<group>"; };
 		ADBBC68C1EB153F400256469 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		ADBBC68F1EB1593A00256469 /* GistSearcherConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GistSearcherConfig.swift; sourceTree = "<group>"; };
+		ADBBC6941EB16B2C00256469 /* GSAPIProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSAPIProvider.swift; sourceTree = "<group>"; };
+		ADBBC6961EB16C2000256469 /* GSAPIEndpoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSAPIEndpoints.swift; sourceTree = "<group>"; };
+		ADBBC6991EB16D3E00256469 /* GSGist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSGist.swift; sourceTree = "<group>"; };
+		ADBBC69D1EB1704500256469 /* GSFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSFile.swift; sourceTree = "<group>"; };
+		ADBBC69F1EB1770900256469 /* GSComment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSComment.swift; sourceTree = "<group>"; };
+		ADBBC6A11EB1778500256469 /* Transforms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transforms.swift; sourceTree = "<group>"; };
+		ADBBC6A41EB177F800256469 /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		ADBBC6A61EB1782B00256469 /* DateExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		ADBBC6AA1EB17E7000256469 /* GSAPIRequests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSAPIRequests.swift; sourceTree = "<group>"; };
+		ADBBC6AC1EB188C000256469 /* GSGistProcessing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSGistProcessing.swift; sourceTree = "<group>"; };
+		ADBBC6AE1EB18A5700256469 /* GSGistDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSGistDetailViewModel.swift; sourceTree = "<group>"; };
+		ADBBC6F91EB190C700256469 /* CodeViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeViewDelegate.swift; sourceTree = "<group>"; };
+		ADBBC6FA1EB190C700256469 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADBBC6FB1EB190C700256469 /* OKSGutteredCodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKSGutteredCodeView.h; sourceTree = "<group>"; };
+		ADBBC6FC1EB190C700256469 /* OKSGutteredCodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OKSGutteredCodeView.swift; sourceTree = "<group>"; };
+		ADBBC6FD1EB190C700256469 /* OKSGutteredCodeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OKSGutteredCodeView.xib; sourceTree = "<group>"; };
 		B7F3C42D33B94AD9EA91303D /* Pods_GistSearcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GistSearcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB4D296474DF54C87B982DFD /* Pods-GistSearcherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GistSearcherTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GistSearcherTests/Pods-GistSearcherTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E9A1331644256815745B3885 /* Pods_GistSearcherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GistSearcherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,11 +145,14 @@
 		ADAB89331EA5990A004E0370 /* GistSearcher */ = {
 			isa = PBXGroup;
 			children = (
+				ADBBC6981EB16CDA00256469 /* Data Layer */,
+				ADBBC6911EB168E500256469 /* Network */,
 				ADBBC68E1EB1590E00256469 /* Utils */,
 				ADAB89541EAA8AAB004E0370 /* Application */,
 				ADAB89601EAA94FA004E0370 /* View */,
 				ADBBC68B1EB153E700256469 /* Extensions */,
 				ADAB89341EA5990A004E0370 /* AppDelegate.swift */,
+				ADBBC6F61EB190B000256469 /* Resources */,
 				ADAB89381EA5990A004E0370 /* Main.storyboard */,
 				ADAB893B1EA5990A004E0370 /* Assets.xcassets */,
 				ADAB893D1EA5990A004E0370 /* LaunchScreen.storyboard */,
@@ -165,9 +199,10 @@
 		ADAB89571EAA8B64004E0370 /* Gist */ = {
 			isa = PBXGroup;
 			children = (
-				ADAB895A1EAA8C2E004E0370 /* GSGistListViewController.swift */,
 				ADAB895C1EAA8CA9004E0370 /* GSGistDetailViewController.swift */,
+				ADAB895A1EAA8C2E004E0370 /* GSGistListViewController.swift */,
 				ADAB895E1EAA8CBD004E0370 /* GSGistCommentViewController.swift */,
+				ADBBC6AE1EB18A5700256469 /* GSGistDetailViewModel.swift */,
 			);
 			name = Gist;
 			sourceTree = "<group>";
@@ -191,6 +226,7 @@
 		ADBBC68B1EB153E700256469 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				ADBBC6A31EB177EF00256469 /* Date */,
 				ADBBC68C1EB153F400256469 /* StringExtensions.swift */,
 			);
 			name = Extensions;
@@ -200,8 +236,75 @@
 			isa = PBXGroup;
 			children = (
 				ADBBC68F1EB1593A00256469 /* GistSearcherConfig.swift */,
+				ADBBC6AC1EB188C000256469 /* GSGistProcessing.swift */,
 			);
 			name = Utils;
+			sourceTree = "<group>";
+		};
+		ADBBC6911EB168E500256469 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				ADBBC6941EB16B2C00256469 /* GSAPIProvider.swift */,
+				ADBBC6AA1EB17E7000256469 /* GSAPIRequests.swift */,
+				ADBBC6961EB16C2000256469 /* GSAPIEndpoints.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		ADBBC6981EB16CDA00256469 /* Data Layer */ = {
+			isa = PBXGroup;
+			children = (
+				ADBBC6A91EB178FE00256469 /* Models */,
+				ADBBC6A81EB178F600256469 /* Transforms */,
+			);
+			name = "Data Layer";
+			sourceTree = "<group>";
+		};
+		ADBBC6A31EB177EF00256469 /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				ADBBC6A41EB177F800256469 /* DateHelper.swift */,
+				ADBBC6A61EB1782B00256469 /* DateExtensions.swift */,
+			);
+			name = Date;
+			sourceTree = "<group>";
+		};
+		ADBBC6A81EB178F600256469 /* Transforms */ = {
+			isa = PBXGroup;
+			children = (
+				ADBBC6A11EB1778500256469 /* Transforms.swift */,
+			);
+			name = Transforms;
+			sourceTree = "<group>";
+		};
+		ADBBC6A91EB178FE00256469 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ADBBC6991EB16D3E00256469 /* GSGist.swift */,
+				ADBBC69D1EB1704500256469 /* GSFile.swift */,
+				ADBBC69F1EB1770900256469 /* GSComment.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		ADBBC6F61EB190B000256469 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ADBBC6F81EB190C700256469 /* OKSGutteredCodeView */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		ADBBC6F81EB190C700256469 /* OKSGutteredCodeView */ = {
+			isa = PBXGroup;
+			children = (
+				ADBBC6F91EB190C700256469 /* CodeViewDelegate.swift */,
+				ADBBC6FA1EB190C700256469 /* Info.plist */,
+				ADBBC6FB1EB190C700256469 /* OKSGutteredCodeView.h */,
+				ADBBC6FC1EB190C700256469 /* OKSGutteredCodeView.swift */,
+				ADBBC6FD1EB190C700256469 /* OKSGutteredCodeView.xib */,
+			);
+			path = OKSGutteredCodeView;
 			sourceTree = "<group>";
 		};
 		FDF77A1B638D11C53D6295AF /* Frameworks */ = {
@@ -304,8 +407,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADBBC6FF1EB190C700256469 /* Info.plist in Resources */,
 				ADAB893F1EA5990A004E0370 /* LaunchScreen.storyboard in Resources */,
 				ADAB893C1EA5990A004E0370 /* Assets.xcassets in Resources */,
+				ADBBC7011EB190C700256469 /* OKSGutteredCodeView.xib in Resources */,
 				ADAB893A1EA5990A004E0370 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,15 +522,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADBBC6951EB16B2C00256469 /* GSAPIProvider.swift in Sources */,
 				ADBBC68D1EB153F400256469 /* StringExtensions.swift in Sources */,
 				ADAB89371EA5990A004E0370 /* GSMainViewController.swift in Sources */,
+				ADBBC69A1EB16D3E00256469 /* GSGist.swift in Sources */,
 				ADAB895F1EAA8CBD004E0370 /* GSGistCommentViewController.swift in Sources */,
+				ADBBC6A71EB1782B00256469 /* DateExtensions.swift in Sources */,
+				ADBBC6AB1EB17E7000256469 /* GSAPIRequests.swift in Sources */,
 				ADBBC6901EB1593A00256469 /* GistSearcherConfig.swift in Sources */,
+				ADBBC6A01EB1770900256469 /* GSComment.swift in Sources */,
 				ADAB895D1EAA8CA9004E0370 /* GSGistDetailViewController.swift in Sources */,
+				ADBBC6A21EB1778500256469 /* Transforms.swift in Sources */,
+				ADBBC6971EB16C2000256469 /* GSAPIEndpoints.swift in Sources */,
 				ADAB895B1EAA8C2E004E0370 /* GSGistListViewController.swift in Sources */,
 				ADAB89621EAA950A004E0370 /* GSPreviewView.swift in Sources */,
+				ADBBC6AF1EB18A5700256469 /* GSGistDetailViewModel.swift in Sources */,
 				ADAB89351EA5990A004E0370 /* AppDelegate.swift in Sources */,
+				ADBBC6AD1EB188C000256469 /* GSGistProcessing.swift in Sources */,
+				ADBBC6FE1EB190C700256469 /* CodeViewDelegate.swift in Sources */,
 				ADAB89591EAA8C21004E0370 /* GSQRCodeReaderViewController.swift in Sources */,
+				ADBBC7001EB190C700256469 /* OKSGutteredCodeView.swift in Sources */,
+				ADBBC6A51EB177F800256469 /* DateHelper.swift in Sources */,
+				ADBBC69E1EB1704500256469 /* GSFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
