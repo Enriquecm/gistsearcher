@@ -6,6 +6,8 @@
 //  Copyright © 2016 J.B. Hunt. All rights reserved.
 //
 
+import UIKit
+
 public protocol CodeViewDelegate: class {
     
     func textUpdated(_ text: String)

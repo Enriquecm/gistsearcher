@@ -14,7 +14,7 @@ class GSGist: Mappable {
     var url: String?
     var gistID: String?
     var files: [String : GSFile]?
-    var ownerUser: Double?
+    var ownerUser: String?
     var commentsCount: Int?
     
     required init?(map: Map) { }
@@ -23,7 +23,7 @@ class GSGist: Mappable {
         url           <- map["url"]
         gistID        <- map["id"]
         files         <- map["files"]
-        ownerUser     <- map["owner"]
+        ownerUser     <- map["owner.login"]
         commentsCount <- map["comments"]
     }
 }

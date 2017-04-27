@@ -10,10 +10,19 @@ import UIKit
 
 class GSGistDetailViewModel: NSObject {
 
-    func process(gistURL url: URL?) {
+    var gist: GSGist?
+    
+    var gistFiles: [GSFile] {
+        return gist?.files?.values.map({$0}) ?? []
+    }
+    
+    func process(gistURL url: URL?, completion: NetworkResponse<GSGist>) {
         
-        let gistID = GSGistProcessing.getID(fromURL: url)
+        guard let gistID = GSGistProcessing.getID(fromURL: url) else { return }
         
-        
+        GSAPIRequests.searchGist(for: gistID) { [weak self] (gist, error) in
+            self?.gist = gist
+            completion?(gist, error)
+        }
     }
 }

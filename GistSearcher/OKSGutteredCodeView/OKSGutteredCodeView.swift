@@ -69,6 +69,7 @@ open class OKSGutteredCodeView: UIView, UITextViewDelegate, UIScrollViewDelegate
     
     @objc open func setText(_ text: String) {
         textView.text = text
+        textViewDidChange(textView)
     }
     
     @objc open func getText() -> String {
@@ -165,8 +166,11 @@ open class OKSGutteredCodeView: UIView, UITextViewDelegate, UIScrollViewDelegate
                 gutterView.contentSize = CGSize(width: contentWidth, height: contentHeight + heightOfLine(line))
             }
         }
-        textView.scrollRectToVisible(CGRect(x: 0, y: curserPosition.y, width: textView.bounds.width, height: textView.bounds.height), animated: false)
-        gutterView.scrollRectToVisible(CGRect(x: 0, y: curserPosition.y, width: textView.bounds.width, height: textView.bounds.height), animated: false)
+        
+        // ECM Note: This was commented out because it is no longer necessary to move down after assigning a text
+        
+//        textView.scrollRectToVisible(CGRect(x: 0, y: curserPosition.y, width: textView.bounds.width, height: textView.bounds.height), animated: false)
+//        gutterView.scrollRectToVisible(CGRect(x: 0, y: curserPosition.y, width: textView.bounds.width, height: textView.bounds.height), animated: false)
     }
     
     func heightOfLine(_ line: String) -> CGFloat {

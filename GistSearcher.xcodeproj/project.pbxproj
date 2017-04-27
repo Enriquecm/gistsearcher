@@ -34,9 +34,25 @@
 		ADBBC6AD1EB188C000256469 /* GSGistProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC6AC1EB188C000256469 /* GSGistProcessing.swift */; };
 		ADBBC6AF1EB18A5700256469 /* GSGistDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC6AE1EB18A5700256469 /* GSGistDetailViewModel.swift */; };
 		ADBBC6FE1EB190C700256469 /* CodeViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC6F91EB190C700256469 /* CodeViewDelegate.swift */; };
-		ADBBC6FF1EB190C700256469 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADBBC6FA1EB190C700256469 /* Info.plist */; };
 		ADBBC7001EB190C700256469 /* OKSGutteredCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC6FC1EB190C700256469 /* OKSGutteredCodeView.swift */; };
 		ADBBC7011EB190C700256469 /* OKSGutteredCodeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADBBC6FD1EB190C700256469 /* OKSGutteredCodeView.xib */; };
+		ADBBC7031EB19D6000256469 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC7021EB19D6000256469 /* UIViewExtensions.swift */; };
+		ADBBC7061EB19E4500256469 /* GSGistFileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC7051EB19E4500256469 /* GSGistFileTableViewCell.swift */; };
+		ADBBC7901EB1AD4F00256469 /* MXKeyboardToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC7801EB1AD4F00256469 /* MXKeyboardToolbar.m */; };
+		ADBBC7911EB1AD4F00256469 /* MXToolbarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC7821EB1AD4F00256469 /* MXToolbarButton.m */; };
+		ADBBC7921EB1AD4F00256469 /* bold.png in Resources */ = {isa = PBXBuildFile; fileRef = ADBBC7841EB1AD4F00256469 /* bold.png */; };
+		ADBBC7931EB1AD4F00256469 /* code.png in Resources */ = {isa = PBXBuildFile; fileRef = ADBBC7851EB1AD4F00256469 /* code.png */; };
+		ADBBC7941EB1AD4F00256469 /* help.png in Resources */ = {isa = PBXBuildFile; fileRef = ADBBC7861EB1AD4F00256469 /* help.png */; };
+		ADBBC7951EB1AD4F00256469 /* hr.png in Resources */ = {isa = PBXBuildFile; fileRef = ADBBC7871EB1AD4F00256469 /* hr.png */; };
+		ADBBC7961EB1AD4F00256469 /* img.png in Resources */ = {isa = PBXBuildFile; fileRef = ADBBC7881EB1AD4F00256469 /* img.png */; };
+		ADBBC7971EB1AD4F00256469 /* italic.png in Resources */ = {isa = PBXBuildFile; fileRef = ADBBC7891EB1AD4F00256469 /* italic.png */; };
+		ADBBC7981EB1AD4F00256469 /* link.png in Resources */ = {isa = PBXBuildFile; fileRef = ADBBC78A1EB1AD4F00256469 /* link.png */; };
+		ADBBC7991EB1AD4F00256469 /* more.png in Resources */ = {isa = PBXBuildFile; fileRef = ADBBC78B1EB1AD4F00256469 /* more.png */; };
+		ADBBC79A1EB1AD4F00256469 /* ol.png in Resources */ = {isa = PBXBuildFile; fileRef = ADBBC78C1EB1AD4F00256469 /* ol.png */; };
+		ADBBC79B1EB1AD4F00256469 /* quote.png in Resources */ = {isa = PBXBuildFile; fileRef = ADBBC78D1EB1AD4F00256469 /* quote.png */; };
+		ADBBC79C1EB1AD4F00256469 /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = ADBBC78E1EB1AD4F00256469 /* title.png */; };
+		ADBBC79D1EB1AD4F00256469 /* ul.png in Resources */ = {isa = PBXBuildFile; fileRef = ADBBC78F1EB1AD4F00256469 /* ul.png */; };
+		ADBBC79F1EB1B32500256469 /* GSGistCommentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC79E1EB1B32500256469 /* GSGistCommentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,10 +98,28 @@
 		ADBBC6AC1EB188C000256469 /* GSGistProcessing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSGistProcessing.swift; sourceTree = "<group>"; };
 		ADBBC6AE1EB18A5700256469 /* GSGistDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSGistDetailViewModel.swift; sourceTree = "<group>"; };
 		ADBBC6F91EB190C700256469 /* CodeViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeViewDelegate.swift; sourceTree = "<group>"; };
-		ADBBC6FA1EB190C700256469 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ADBBC6FB1EB190C700256469 /* OKSGutteredCodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKSGutteredCodeView.h; sourceTree = "<group>"; };
 		ADBBC6FC1EB190C700256469 /* OKSGutteredCodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OKSGutteredCodeView.swift; sourceTree = "<group>"; };
 		ADBBC6FD1EB190C700256469 /* OKSGutteredCodeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OKSGutteredCodeView.xib; sourceTree = "<group>"; };
+		ADBBC7021EB19D6000256469 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		ADBBC7051EB19E4500256469 /* GSGistFileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSGistFileTableViewCell.swift; sourceTree = "<group>"; };
+		ADBBC77A1EB1AD1D00256469 /* GistSearcher-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GistSearcher-Bridging-Header.h"; sourceTree = "<group>"; };
+		ADBBC77F1EB1AD4F00256469 /* MXKeyboardToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXKeyboardToolbar.h; sourceTree = "<group>"; };
+		ADBBC7801EB1AD4F00256469 /* MXKeyboardToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXKeyboardToolbar.m; sourceTree = "<group>"; };
+		ADBBC7811EB1AD4F00256469 /* MXToolbarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXToolbarButton.h; sourceTree = "<group>"; };
+		ADBBC7821EB1AD4F00256469 /* MXToolbarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXToolbarButton.m; sourceTree = "<group>"; };
+		ADBBC7841EB1AD4F00256469 /* bold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bold.png; sourceTree = "<group>"; };
+		ADBBC7851EB1AD4F00256469 /* code.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = code.png; sourceTree = "<group>"; };
+		ADBBC7861EB1AD4F00256469 /* help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help.png; sourceTree = "<group>"; };
+		ADBBC7871EB1AD4F00256469 /* hr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hr.png; sourceTree = "<group>"; };
+		ADBBC7881EB1AD4F00256469 /* img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img.png; sourceTree = "<group>"; };
+		ADBBC7891EB1AD4F00256469 /* italic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = italic.png; sourceTree = "<group>"; };
+		ADBBC78A1EB1AD4F00256469 /* link.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = link.png; sourceTree = "<group>"; };
+		ADBBC78B1EB1AD4F00256469 /* more.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = more.png; sourceTree = "<group>"; };
+		ADBBC78C1EB1AD4F00256469 /* ol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ol.png; sourceTree = "<group>"; };
+		ADBBC78D1EB1AD4F00256469 /* quote.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = quote.png; sourceTree = "<group>"; };
+		ADBBC78E1EB1AD4F00256469 /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
+		ADBBC78F1EB1AD4F00256469 /* ul.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ul.png; sourceTree = "<group>"; };
+		ADBBC79E1EB1B32500256469 /* GSGistCommentViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSGistCommentViewModel.swift; sourceTree = "<group>"; };
 		B7F3C42D33B94AD9EA91303D /* Pods_GistSearcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GistSearcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB4D296474DF54C87B982DFD /* Pods-GistSearcherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GistSearcherTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GistSearcherTests/Pods-GistSearcherTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E9A1331644256815745B3885 /* Pods_GistSearcherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GistSearcherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,12 +185,13 @@
 				ADAB89541EAA8AAB004E0370 /* Application */,
 				ADAB89601EAA94FA004E0370 /* View */,
 				ADBBC68B1EB153E700256469 /* Extensions */,
-				ADAB89341EA5990A004E0370 /* AppDelegate.swift */,
 				ADBBC6F61EB190B000256469 /* Resources */,
+				ADAB89341EA5990A004E0370 /* AppDelegate.swift */,
 				ADAB89381EA5990A004E0370 /* Main.storyboard */,
 				ADAB893B1EA5990A004E0370 /* Assets.xcassets */,
 				ADAB893D1EA5990A004E0370 /* LaunchScreen.storyboard */,
 				ADAB89401EA5990A004E0370 /* Info.plist */,
+				ADBBC77A1EB1AD1D00256469 /* GistSearcher-Bridging-Header.h */,
 			);
 			path = GistSearcher;
 			sourceTree = "<group>";
@@ -199,10 +234,11 @@
 		ADAB89571EAA8B64004E0370 /* Gist */ = {
 			isa = PBXGroup;
 			children = (
-				ADAB895C1EAA8CA9004E0370 /* GSGistDetailViewController.swift */,
-				ADAB895A1EAA8C2E004E0370 /* GSGistListViewController.swift */,
-				ADAB895E1EAA8CBD004E0370 /* GSGistCommentViewController.swift */,
 				ADBBC6AE1EB18A5700256469 /* GSGistDetailViewModel.swift */,
+				ADAB895C1EAA8CA9004E0370 /* GSGistDetailViewController.swift */,
+				ADBBC79E1EB1B32500256469 /* GSGistCommentViewModel.swift */,
+				ADAB895E1EAA8CBD004E0370 /* GSGistCommentViewController.swift */,
+				ADAB895A1EAA8C2E004E0370 /* GSGistListViewController.swift */,
 			);
 			name = Gist;
 			sourceTree = "<group>";
@@ -210,6 +246,7 @@
 		ADAB89601EAA94FA004E0370 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				ADBBC7041EB19E2D00256469 /* Cells */,
 				ADAB89631EAA950D004E0370 /* Custom */,
 			);
 			name = View;
@@ -228,6 +265,7 @@
 			children = (
 				ADBBC6A31EB177EF00256469 /* Date */,
 				ADBBC68C1EB153F400256469 /* StringExtensions.swift */,
+				ADBBC7021EB19D6000256469 /* UIViewExtensions.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -290,6 +328,7 @@
 		ADBBC6F61EB190B000256469 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				ADBBC77E1EB1AD4F00256469 /* MXMarkdownKeyboard */,
 				ADBBC6F81EB190C700256469 /* OKSGutteredCodeView */,
 			);
 			name = Resources;
@@ -299,12 +338,49 @@
 			isa = PBXGroup;
 			children = (
 				ADBBC6F91EB190C700256469 /* CodeViewDelegate.swift */,
-				ADBBC6FA1EB190C700256469 /* Info.plist */,
-				ADBBC6FB1EB190C700256469 /* OKSGutteredCodeView.h */,
 				ADBBC6FC1EB190C700256469 /* OKSGutteredCodeView.swift */,
 				ADBBC6FD1EB190C700256469 /* OKSGutteredCodeView.xib */,
 			);
 			path = OKSGutteredCodeView;
+			sourceTree = "<group>";
+		};
+		ADBBC7041EB19E2D00256469 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				ADBBC7051EB19E4500256469 /* GSGistFileTableViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		ADBBC77E1EB1AD4F00256469 /* MXMarkdownKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				ADBBC77F1EB1AD4F00256469 /* MXKeyboardToolbar.h */,
+				ADBBC7801EB1AD4F00256469 /* MXKeyboardToolbar.m */,
+				ADBBC7811EB1AD4F00256469 /* MXToolbarButton.h */,
+				ADBBC7821EB1AD4F00256469 /* MXToolbarButton.m */,
+				ADBBC7831EB1AD4F00256469 /* Resources */,
+			);
+			path = MXMarkdownKeyboard;
+			sourceTree = "<group>";
+		};
+		ADBBC7831EB1AD4F00256469 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ADBBC7841EB1AD4F00256469 /* bold.png */,
+				ADBBC7851EB1AD4F00256469 /* code.png */,
+				ADBBC7861EB1AD4F00256469 /* help.png */,
+				ADBBC7871EB1AD4F00256469 /* hr.png */,
+				ADBBC7881EB1AD4F00256469 /* img.png */,
+				ADBBC7891EB1AD4F00256469 /* italic.png */,
+				ADBBC78A1EB1AD4F00256469 /* link.png */,
+				ADBBC78B1EB1AD4F00256469 /* more.png */,
+				ADBBC78C1EB1AD4F00256469 /* ol.png */,
+				ADBBC78D1EB1AD4F00256469 /* quote.png */,
+				ADBBC78E1EB1AD4F00256469 /* title.png */,
+				ADBBC78F1EB1AD4F00256469 /* ul.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		FDF77A1B638D11C53D6295AF /* Frameworks */ = {
@@ -374,6 +450,7 @@
 					ADAB89301EA5990A004E0370 = {
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = 38HUSCHT3G;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					ADAB89441EA5990A004E0370 = {
@@ -407,11 +484,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADBBC6FF1EB190C700256469 /* Info.plist in Resources */,
+				ADBBC79B1EB1AD4F00256469 /* quote.png in Resources */,
+				ADBBC79A1EB1AD4F00256469 /* ol.png in Resources */,
 				ADAB893F1EA5990A004E0370 /* LaunchScreen.storyboard in Resources */,
+				ADBBC7921EB1AD4F00256469 /* bold.png in Resources */,
+				ADBBC7991EB1AD4F00256469 /* more.png in Resources */,
+				ADBBC7931EB1AD4F00256469 /* code.png in Resources */,
+				ADBBC7951EB1AD4F00256469 /* hr.png in Resources */,
+				ADBBC7981EB1AD4F00256469 /* link.png in Resources */,
 				ADAB893C1EA5990A004E0370 /* Assets.xcassets in Resources */,
 				ADBBC7011EB190C700256469 /* OKSGutteredCodeView.xib in Resources */,
+				ADBBC79D1EB1AD4F00256469 /* ul.png in Resources */,
+				ADBBC7961EB1AD4F00256469 /* img.png in Resources */,
+				ADBBC7971EB1AD4F00256469 /* italic.png in Resources */,
 				ADAB893A1EA5990A004E0370 /* Main.storyboard in Resources */,
+				ADBBC7941EB1AD4F00256469 /* help.png in Resources */,
+				ADBBC79C1EB1AD4F00256469 /* title.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,6 +614,9 @@
 				ADBBC68D1EB153F400256469 /* StringExtensions.swift in Sources */,
 				ADAB89371EA5990A004E0370 /* GSMainViewController.swift in Sources */,
 				ADBBC69A1EB16D3E00256469 /* GSGist.swift in Sources */,
+				ADBBC7911EB1AD4F00256469 /* MXToolbarButton.m in Sources */,
+				ADBBC7061EB19E4500256469 /* GSGistFileTableViewCell.swift in Sources */,
+				ADBBC7031EB19D6000256469 /* UIViewExtensions.swift in Sources */,
 				ADAB895F1EAA8CBD004E0370 /* GSGistCommentViewController.swift in Sources */,
 				ADBBC6A71EB1782B00256469 /* DateExtensions.swift in Sources */,
 				ADBBC6AB1EB17E7000256469 /* GSAPIRequests.swift in Sources */,
@@ -535,12 +626,14 @@
 				ADBBC6A21EB1778500256469 /* Transforms.swift in Sources */,
 				ADBBC6971EB16C2000256469 /* GSAPIEndpoints.swift in Sources */,
 				ADAB895B1EAA8C2E004E0370 /* GSGistListViewController.swift in Sources */,
+				ADBBC7901EB1AD4F00256469 /* MXKeyboardToolbar.m in Sources */,
 				ADAB89621EAA950A004E0370 /* GSPreviewView.swift in Sources */,
 				ADBBC6AF1EB18A5700256469 /* GSGistDetailViewModel.swift in Sources */,
 				ADAB89351EA5990A004E0370 /* AppDelegate.swift in Sources */,
 				ADBBC6AD1EB188C000256469 /* GSGistProcessing.swift in Sources */,
 				ADBBC6FE1EB190C700256469 /* CodeViewDelegate.swift in Sources */,
 				ADAB89591EAA8C21004E0370 /* GSQRCodeReaderViewController.swift in Sources */,
+				ADBBC79F1EB1B32500256469 /* GSGistCommentViewModel.swift in Sources */,
 				ADBBC7001EB190C700256469 /* OKSGutteredCodeView.swift in Sources */,
 				ADBBC6A51EB177F800256469 /* DateHelper.swift in Sources */,
 				ADBBC69E1EB1704500256469 /* GSFile.swift in Sources */,
@@ -685,11 +778,14 @@
 			baseConfigurationReference = 7E8A6113D551B53A4E674DAC /* Pods-GistSearcher.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 38HUSCHT3G;
 				INFOPLIST_FILE = GistSearcher/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.choynowski.GistSearcher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GistSearcher/GistSearcher-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -699,11 +795,13 @@
 			baseConfigurationReference = 7DC5D795CFAE84C2FBFBB252 /* Pods-GistSearcher.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 38HUSCHT3G;
 				INFOPLIST_FILE = GistSearcher/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.choynowski.GistSearcher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GistSearcher/GistSearcher-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

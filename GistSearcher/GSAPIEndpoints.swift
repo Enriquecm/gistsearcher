@@ -20,9 +20,9 @@ extension GSEndpoint {
     
     var path: String {
         switch self {
-        case .gistCreateComment(let gistID): return "gist/\(gistID)/comments"
-        case .gistComments(let gistID):      return "gist/\(gistID)/comments"
-        case .gistDetail(let gistID):        return "gist/\(gistID)"
+        case .gistCreateComment(let gistID): return "gists/\(gistID)/comments"
+        case .gistComments(let gistID):      return "gists/\(gistID)/comments"
+        case .gistDetail(let gistID):        return "gists/\(gistID)"
         }
     }
 }

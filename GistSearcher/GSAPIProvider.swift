@@ -19,23 +19,26 @@ struct GSAPIParameters {
 struct GSAPIProvider {
     
     // MARK: Web Service GET request
-    static func GET<T: Mappable>(withEndPoint endPoint: String, andParams params: Parameters? = nil, completion: NetworkResponse<[T]>) {
+    static func GET<T: Mappable>(withEndPoint endPoint: String, andParams params: Parameters? = nil, completion: NetworkResponse<T>) {
         
         Alamofire.request(GSAPIParameters.githubURL + endPoint, parameters: params)
             .validate()
-            .responseArray(keyPath: "results") { (response: DataResponse<[T]>) in
-            switch response.result {
-            case .success(let response):
-                completion?(response, nil)
-            case .failure(let error):
-                completion?(nil, error)
-            }
+            .responseObject { (response: DataResponse<T>) in
+                
+                switch response.result {
+                case .success(let response):
+                    completion?(response, nil)
+                case .failure(let error):
+                    completion?(nil, error)
+                }
         }
     }
     
     static func POST<T: Mappable>(withEndPoint endPoint: String, andParams params: Parameters? = nil, completion: NetworkResponse<T>) {
         
-        Alamofire.request(GSAPIParameters.githubURL + endPoint, method: .post, parameters: params).responseObject { (response: DataResponse<T>) in
+        Alamofire.request(GSAPIParameters.githubURL + endPoint, method: .post, parameters: params)
+            .validate()
+            .responseObject { (response: DataResponse<T>) in
             
             switch response.result {
             case .success(let response):
