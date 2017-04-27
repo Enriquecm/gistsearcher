@@ -12,7 +12,10 @@ class GSGistCommentViewModel: NSObject {
 
     func saveComment(comment: String?, forGistID gistID: String?, completion: NetworkResponse<GSComment>) {
         
-        guard let comment = comment, let gistID = gistID else { return }
+        guard let comment = comment, let gistID = gistID else {
+            completion?(nil, nil)
+            return
+        }
         
         GSAPIRequests.writeComment(comment: comment, for: gistID, completion: completion)
     }

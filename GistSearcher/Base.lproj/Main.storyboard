@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dyI-7W-xv2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bxE-EH-89a">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -255,7 +255,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <segue destination="dyI-7W-xv2" kind="show" id="Olc-1J-yg0"/>
+                        <segue destination="dyI-7W-xv2" kind="show" identifier="segueGoToGist" id="Olc-1J-yg0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3XF-W0-5On" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -323,13 +323,13 @@
                                                                     <rect key="frame" x="0.0" y="0.0" width="365" height="40"/>
                                                                     <subviews>
                                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gistFile" translatesAutoresizingMaskIntoConstraints="NO" id="J6n-Jw-jBS">
-                                                                            <rect key="frame" x="4" y="4" width="32" height="32"/>
+                                                                            <rect key="frame" x="6" y="10" width="20" height="20"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" secondItem="J6n-Jw-jBS" secondAttribute="height" multiplier="1:1" id="kl3-5i-ZEr"/>
                                                                             </constraints>
                                                                         </imageView>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gist File Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KZk-Uo-O57">
-                                                                            <rect key="frame" x="44" y="10.5" width="313" height="20"/>
+                                                                            <rect key="frame" x="34" y="10.5" width="323" height="20"/>
                                                                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                                             <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <nil key="highlightedColor"/>
@@ -337,9 +337,9 @@
                                                                     </subviews>
                                                                     <color key="backgroundColor" red="0.98039215686274506" green="0.98431372549019602" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <constraints>
-                                                                        <constraint firstItem="J6n-Jw-jBS" firstAttribute="top" secondItem="Rm6-Hy-lZ3" secondAttribute="top" constant="4" id="A7Q-vW-1nd"/>
-                                                                        <constraint firstAttribute="bottom" secondItem="J6n-Jw-jBS" secondAttribute="bottom" constant="4" id="Jcu-lg-oui"/>
-                                                                        <constraint firstItem="J6n-Jw-jBS" firstAttribute="leading" secondItem="Rm6-Hy-lZ3" secondAttribute="leading" constant="4" id="NxW-ld-pkg"/>
+                                                                        <constraint firstItem="J6n-Jw-jBS" firstAttribute="top" secondItem="Rm6-Hy-lZ3" secondAttribute="top" constant="10" id="A7Q-vW-1nd"/>
+                                                                        <constraint firstAttribute="bottom" secondItem="J6n-Jw-jBS" secondAttribute="bottom" constant="10" id="Jcu-lg-oui"/>
+                                                                        <constraint firstItem="J6n-Jw-jBS" firstAttribute="leading" secondItem="Rm6-Hy-lZ3" secondAttribute="leading" constant="6" id="NxW-ld-pkg"/>
                                                                         <constraint firstItem="KZk-Uo-O57" firstAttribute="centerY" secondItem="Rm6-Hy-lZ3" secondAttribute="centerY" id="YzV-O5-yl3"/>
                                                                         <constraint firstItem="KZk-Uo-O57" firstAttribute="leading" secondItem="J6n-Jw-jBS" secondAttribute="trailing" constant="8" id="cxg-3G-LUI"/>
                                                                         <constraint firstAttribute="trailing" secondItem="KZk-Uo-O57" secondAttribute="trailing" constant="8" id="igQ-cK-qhM"/>
@@ -456,10 +456,11 @@
                         <outlet property="tableView" destination="qCc-W0-5dF" id="gr9-9u-0gE"/>
                         <outlet property="viewFooter" destination="jNo-zZ-Vwv" id="P0t-Xz-MJK"/>
                         <outlet property="viewHeader" destination="gx8-W9-NfU" id="536-hr-Jol"/>
-                        <segue destination="GZm-L9-nOB" kind="modal" identifier="segueCreateComment" id="Mpw-hV-gkC"/>
+                        <segue destination="GZm-L9-nOB" kind="presentation" identifier="segueCreateComment" id="Mpw-hV-gkC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HoY-zC-lGd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="r2E-fR-b7g" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1960.8" y="-670.61469265367316"/>
         </scene>
@@ -515,7 +516,7 @@
                                 <action selector="barButtonCancelPressed:" destination="j12-SX-XoM" id="wgt-mQ-NWh"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" enabled="NO" style="plain" systemItem="save" id="75k-tF-gPh">
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" style="done" systemItem="save" id="75k-tF-gPh">
                             <connections>
                                 <action selector="barButtonSavePressed:" destination="j12-SX-XoM" id="vLQ-qi-Hda"/>
                             </connections>
@@ -527,6 +528,7 @@
                         <outlet property="barButtonSave" destination="75k-tF-gPh" id="MP4-9t-5Xr"/>
                         <outlet property="constraintTextViewBottom" destination="xpw-J8-h1j" id="MoT-gy-MMI"/>
                         <outlet property="textView" destination="vq8-7H-X8L" id="vzz-mL-MMe"/>
+                        <segue destination="r2E-fR-b7g" kind="unwind" identifier="unwindSegueToGistDetail" unwindAction="unwindToGistDetailWithSegue:" id="tSC-Zw-gCM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kVh-ER-8hh" userLabel="First Responder" sceneMemberID="firstResponder"/>

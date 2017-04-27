@@ -25,8 +25,6 @@ class GSGistDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        gistURL = URL(string: "https://gist.github.com/KDCinfo/0435e4ce4112ce8880e48a9c8bb0e612")
         
         setupUI()
         setupGist()
@@ -77,6 +75,12 @@ class GSGistDetailViewController: UIViewController {
         }
         performSegue(withIdentifier: GSSegueIdentifier.createComment, sender: viewModel.gist?.gistID)
     }
+    
+    @IBAction func unwindToGistDetail(segue: UIStoryboardSegue) {
+        // Reload Gist
+        setupGist()
+    }
+
     
     
     // MARK: Prepare for segue

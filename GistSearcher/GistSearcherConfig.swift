@@ -10,5 +10,6 @@ import Foundation
 
 struct GSSegueIdentifier {
     static let goToGist = "segueGoToGist"
+    static let unwindGoToGist = "unwindSegueToGistDetail"
     static let createComment = "segueCreateComment"
 }

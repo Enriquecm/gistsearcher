@@ -53,6 +53,7 @@
 		ADBBC79C1EB1AD4F00256469 /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = ADBBC78E1EB1AD4F00256469 /* title.png */; };
 		ADBBC79D1EB1AD4F00256469 /* ul.png in Resources */ = {isa = PBXBuildFile; fileRef = ADBBC78F1EB1AD4F00256469 /* ul.png */; };
 		ADBBC79F1EB1B32500256469 /* GSGistCommentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC79E1EB1B32500256469 /* GSGistCommentViewModel.swift */; };
+		ADBBC7A21EB1BCF500256469 /* GSUserCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC7A11EB1BCF500256469 /* GSUserCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +121,7 @@
 		ADBBC78E1EB1AD4F00256469 /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
 		ADBBC78F1EB1AD4F00256469 /* ul.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ul.png; sourceTree = "<group>"; };
 		ADBBC79E1EB1B32500256469 /* GSGistCommentViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSGistCommentViewModel.swift; sourceTree = "<group>"; };
+		ADBBC7A11EB1BCF500256469 /* GSUserCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSUserCoordinator.swift; sourceTree = "<group>"; };
 		B7F3C42D33B94AD9EA91303D /* Pods_GistSearcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GistSearcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB4D296474DF54C87B982DFD /* Pods-GistSearcherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GistSearcherTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GistSearcherTests/Pods-GistSearcherTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E9A1331644256815745B3885 /* Pods_GistSearcherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GistSearcherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -179,6 +181,7 @@
 		ADAB89331EA5990A004E0370 /* GistSearcher */ = {
 			isa = PBXGroup;
 			children = (
+				ADBBC7A01EB1BCBC00256469 /* Coordinators */,
 				ADBBC6981EB16CDA00256469 /* Data Layer */,
 				ADBBC6911EB168E500256469 /* Network */,
 				ADBBC68E1EB1590E00256469 /* Utils */,
@@ -381,6 +384,14 @@
 				ADBBC78F1EB1AD4F00256469 /* ul.png */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		ADBBC7A01EB1BCBC00256469 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				ADBBC7A11EB1BCF500256469 /* GSUserCoordinator.swift */,
+			);
+			name = Coordinators;
 			sourceTree = "<group>";
 		};
 		FDF77A1B638D11C53D6295AF /* Frameworks */ = {
@@ -633,6 +644,7 @@
 				ADBBC6AD1EB188C000256469 /* GSGistProcessing.swift in Sources */,
 				ADBBC6FE1EB190C700256469 /* CodeViewDelegate.swift in Sources */,
 				ADAB89591EAA8C21004E0370 /* GSQRCodeReaderViewController.swift in Sources */,
+				ADBBC7A21EB1BCF500256469 /* GSUserCoordinator.swift in Sources */,
 				ADBBC79F1EB1B32500256469 /* GSGistCommentViewModel.swift in Sources */,
 				ADBBC7001EB190C700256469 /* OKSGutteredCodeView.swift in Sources */,
 				ADBBC6A51EB177F800256469 /* DateHelper.swift in Sources */,

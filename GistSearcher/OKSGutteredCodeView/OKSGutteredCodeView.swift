@@ -56,6 +56,11 @@ open class OKSGutteredCodeView: UIView, UITextViewDelegate, UIScrollViewDelegate
         textViewDidChange(textView)
     }
     
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+        removeObserver(self, forKeyPath: "bounds")
+    }
+    
     //MARK: custimization methods
     
     @objc open func setGutterBackgroundColor(_ color: UIColor) {

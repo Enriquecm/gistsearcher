@@ -51,22 +51,7 @@ class GSGistCommentViewController: UIViewController {
     
     // MARK: Actions
     @IBAction func barButtonSavePressed(_ sender: UIBarButtonItem) {
-        
-        setupUIForLoading()
-        viewModel.saveComment(comment: textView.text, forGistID: gistID) { [weak self] (comment, error) in
-        
-            DispatchQueue.main.async {
-                self?.setupUIForNotLoadgin()
-                if error != nil {
-                    let alertController = UIAlertController(title: "Fail to save the comment", message: "Please, try again", preferredStyle: .alert)
-                    let action = UIAlertAction(title: "OK", style: .default)
-                    alertController.addAction(action)
-                    self?.present(alertController, animated: true, completion: nil)
-                } else {
-                    self?.dismiss(animated: true, completion: nil)
-                }
-            }
-        }
+        saveComment()
     }
     
     @IBAction func barButtonCancelPressed(_ sender: UIBarButtonItem) {
@@ -87,6 +72,66 @@ class GSGistCommentViewController: UIViewController {
 }
 
 extension GSGistCommentViewController {
+    
+    fileprivate func checkUserInformation() -> Bool {
+        
+        if GSUserCoordinator.shared.hasCredentials() {
+            return true
+        } else {
+            
+            var textFieldLogin: UITextField?
+            var textFieldPassword: UITextField?
+            let passwordPrompt = UIAlertController(title: "Sign in to comment", message: "You need to enter your login and password to comment this Gist.", preferredStyle: .alert)
+            passwordPrompt.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
+            passwordPrompt.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak self] action in
+                GSUserCoordinator.shared.saveUser(login: textFieldLogin?.text, andPassword: textFieldPassword?.text)
+                self?.saveComment()
+            }))
+            
+            passwordPrompt.addTextField(configurationHandler: { (textField: UITextField) in
+                textField.placeholder = "Login"
+                textFieldLogin = textField
+            })
+            
+            passwordPrompt.addTextField(configurationHandler: { (textField: UITextField) in
+                textField.placeholder = "Password"
+                textField.isSecureTextEntry = true
+                textFieldPassword = textField
+            })
+            
+            
+            self.present(passwordPrompt, animated: true, completion: nil)
+            
+            return false
+        }
+    }
+    
+    fileprivate func saveComment() {
+        guard checkUserInformation() else { return }
+        
+        setupUIForLoading()
+        viewModel.saveComment(comment: textView.text, forGistID: gistID) { [weak self] (comment, error) in
+            
+            DispatchQueue.main.async {
+                self?.setupUIForNotLoadgin()
+                
+                if error != nil {
+                    
+                    let alertController = UIAlertController(title: "Fail to save the comment", message: "Please, try again", preferredStyle: .alert)
+                    let action = UIAlertAction(title: "OK", style: .default)
+                    let action2 = UIAlertAction(title: "Clear user credentials", style: .destructive) { alertAction in
+                        GSUserCoordinator.shared.clear()
+                    }
+                    alertController.addAction(action)
+                    alertController.addAction(action2)
+                    self?.present(alertController, animated: true, completion: nil)
+                } else {
+                    
+                    self?.performSegue(withIdentifier: GSSegueIdentifier.unwindGoToGist, sender: nil)
+                }
+            }
+        }
+    }
     
     fileprivate func setupUIForLoading() {
         view.endEditing(true)

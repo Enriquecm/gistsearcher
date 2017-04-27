@@ -72,6 +72,7 @@ class GSQRCodeReaderViewController: UIViewController {
         sessionQueue.async {
             if self.setupResult == .success {
                 self.stopSession()
+                self.canPerformSegue = true
             }
         }
         super.viewWillDisappear(animated)
